@@ -3,7 +3,7 @@ My dotfiles for a morden CLI and a fancy Hyprland rice.
 ## Usage
 `yadm` is required.
 ```bash
-yadm clone git@github.com:pstron/dotfiles.git
+yadm clone -b dotfiles git@github.com:pstron/dotfiles.git
 ```
 ## Packages
 ### Dotfiles Manager
