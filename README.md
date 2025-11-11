@@ -5,6 +5,11 @@ My dotfiles for a morden CLI and a fancy Hyprland rice.
 ```bash
 yadm clone -b dotfiles git@github.com:pstron/dotfiles.git
 ```
+## Termux
+A recommended configuration of `extra-keys` in `~/.termux/termux.properties`
+```
+extra-keys = [['ESC','<','>','BACKSLASH','=','^','$','()','{}','[]','ENTER'],['TAB','&',';','/','~','%','*','HOME','UP','END','PGUP'],['CTRL','FN','ALT','|','-','+','QUOTE','LEFT','DOWN','RIGHT','PGDN']]
+```
 ## Packages
 ### Dotfiles Manager
 `yadm`
