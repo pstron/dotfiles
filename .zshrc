@@ -27,18 +27,18 @@ alias _='sudo '
 alias pls='sudo'
 alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias afind='ack -il'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
+alias egrep='rg --color=auto -E'
+alias fgrep='rg --color=auto -F'
 alias gc1='git clone --recursive --depth=1'
 alias globurl='noglob urlglobber '
-alias grep='grep --color=auto'
+alias grep='rg --color=auto'
 alias md='mkdir -p'
 
 #############
 ## Replace ##
 #############
-# exa
-if [[ $(command -v exa) ]] {
+# eza
+if [[ $(command -v eza) ]] {
     DISABLE_LS_COLORS=true
     unset LS_BIN_FILE
     for i (/bin/ls ${PREFIX}/bin/ls /usr/bin/ls /usr/local/bin/ls) {
@@ -50,12 +50,12 @@ if [[ $(command -v exa) ]] {
     [[ -n ${LS_BIN_FILE} ]] || local LS_BIN_FILE=$(whereis ls 2>/dev/null | awk '{print $2}')
     alias lls=${LS_BIN_FILE} 
     # lls is the original ls
-    alias ls="exa --color=auto" 
-    alias l='exa -lbah --icons'
-    alias la='exa -labgh --icons'
-    alias ll='exa -lbg --icons'
-    alias lsa='exa -lbagR --icons'
-    alias lst='exa -lTabgh --icons' # lst as tree
+    alias ls="eza --color=auto" 
+    alias l='eza -lbah --icons'
+    alias la='eza -labgh --icons'
+    alias ll='eza -lbg --icons'
+    alias lsa='eza -lbagR --icons'
+    alias lst='eza -lTabgh --icons' # lst as tree
 } else {
     alias ls='ls --color=auto'
     alias lst='tree -pCsh'
@@ -64,7 +64,6 @@ if [[ $(command -v exa) ]] {
     alias ll='ls -lh'
     alias lsa='ls -lah'
 }
-[[ ! $(command -v tmoe) ]] || alias t=tmoe
 # bat
 set_bat_paper_variable() {
     unset CAT_BIN_FILE i
