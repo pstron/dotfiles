@@ -5,7 +5,7 @@ My dotfiles for a morden CLI and a fancy Hyprland rice.
 ```bash
 yadm clone -b dotfiles git@github.com:pstron/dotfiles.git
 ```
-For more detailed information, please read my [blog](https://blog.feynmach.com/posts/hyprland-installation-and-configuration).
+For more detailed information, please read my [blog](https://blog.feynmach.com/posts/hyprland-setup-and-configuration).
 ## Termux
 A recommended configuration of `extra-keys` in `~/.termux/termux.properties`
 ```
