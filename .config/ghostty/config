@@ -1,0 +1,12 @@
+theme = Catppuccin Mocha
+background-opacity = 0.6
+window-decoration = false
+font-family = JetBrains Mono
+font-size = 11
+cursor-opacity = 0.8
+cursor-style = block
+link-url = true
+bold-is-bright = true
+quit-after-last-window-closed = false
+custom-shader-animation = always
+custom-shader = shaders/cursor_warp.glsl
