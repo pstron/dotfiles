@@ -9,5 +9,6 @@ cursor-opacity = 0.8
 link-url = true
 bold-is-bright = true
 quit-after-last-window-closed = false
+confirm-close-surface = false
 custom-shader-animation = always
 custom-shader = shaders/cursor_warp.glsl
